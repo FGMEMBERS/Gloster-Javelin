@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>yoke.ac</path>
+
+  <animation>
+      <type>rotate</type>
+      <object-name>yoke-stand</object-name>
+      <object-name>yoke</object-name>
+      <property>controls/flight/elevator</property>
+      <interpolation>
+         <entry>      <ind>1.0</ind>   <dep>-10</dep>   </entry>
+         <entry>      <ind>-1.0</ind>   <dep>10</dep>   </entry>
+      </interpolation>
+      <center>
+         <x-m> -1.441 </x-m>
+         <y-m>  0.00 </y-m>
+         <z-m> -0.142 </z-m>
+      </center>
+      <axis>
+         <x>0</x>
+         <y>1</y>
+         <z>0</z>
+     </axis>
+    </animation>
+
+<animation>
+      <type>rotate</type>
+      <object-name>yoke</object-name>
+      <property>controls/flight/aileron</property>
+      <interpolation>
+         <entry>      <ind>1.0</ind>   <dep>-27</dep>   </entry>
+         <entry>      <ind>-1.0</ind>   <dep>27</dep>   </entry>
+      </interpolation>
+      <center>
+         <x-m> -1.33 </x-m>
+         <y-m>  0.00 </y-m>
+         <z-m> 0.153 </z-m>
+      </center>
+      <axis>
+         <x>1</x>
+         <y>0</y>
+         <z>0</z>
+     </axis>
+    </animation>
+
+</PropertyList>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  
+
+ 
+
+  
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m>0</x-m>
+      <y-m>0</y-m>
+      <z-m> 0 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- pilots -->
+  
+   <model>
+   <name>pilot</name>
+    <path>Aircraft/Gloster-Javelin/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m>-3.8</x-m>
+      <y-m>0.03</y-m>
+      <z-m> 0.2 </z-m>
+    </offsets>
+  </model>
+  
+     <model>
+	 <name>pilot1</name>
+    <path>Aircraft/Gloster-Javelin/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m>-2.39</x-m>
+      <y-m>0</y-m>
+      <z-m> 0.05 </z-m>
+    </offsets>
+  </model>
+  
+     <animation>
+        <type>select</type>
+        <object-name>pilot</object-name>
+		<object-name>pilot1</object-name>
+		<condition>
+<not>
+            <property>sim/current-view/internal</property>
+</not>
+        </condition>
+    </animation>		
+
+ 
+
+</PropertyList>
+

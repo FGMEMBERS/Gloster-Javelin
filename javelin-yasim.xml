@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Gloster Javelin FAW9
+
+  Source          : http://www.thunder-and-lightnings.co.uk/javelin/history.php
+     
+     Wingspan     : 52 ft 10 in 
+     Length       : 56 ft 9 in 
+     Height       : 16 ft 0  in
+     Empty weight :   24000 lb 
+     Moteur       : Two 11,000 lb (12,300 lb with reheat) Sapphire Sa7R 
+     Speed max    : 610 knots at sea level, 0.93 mach at altitude ( 35000ft )
+     
+-->
+
+<airplane mass="24000">
+
+  <approach speed="140" aoa="2" fuel="0.2">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle" value="0.3"/>
+    <control-setting axis="/controls/engines/engine[0]/afterburner" value="0"/>
+    <control-setting axis="/controls/engines/engine[1]/afterburner" value="0"/>
+    <control-setting axis="/controls/flight/spoiler" value="0"/>
+    <control-setting axis="/controls/gear/gear-down" value="1"/>
+  </approach>
+
+  <!--
+  Vitesse de croisiere environ 1800 km/h (971 kts).
+  -->
+  <cruise speed="530" alt="35000" fuel="0.4">
+    <control-setting axis="/controls/engines/engine[0]/throttle" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/throttle" value="1"/>
+	<control-setting axis="/controls/engines/engine[0]/afterburner" value="1"/>
+    <control-setting axis="/controls/engines/engine[1]/afterburner" value="1"/>
+    <control-setting axis="/controls/flight/flaps" value="0.0"/>
+<control-setting axis="/controls/gear/gear-down" value="0"/>
+    
+  </cruise>
+
+  <cockpit x="3.9" y="0" z="0.592"/>
+
+  <!-- Noze -->
+ 
+  <fuselage ax="8.2" ay=" 0.000" az="-0.4" bx="  5.8" by=" 0.000" bz="-0.4"
+            width="1.5" taper="0.07" midpoint="1.00" idrag="0.7" cx="2" cz="2" cy="2"/>
+  <!-- Fuselage -->
+  <fuselage ax=" 6" ay=" 0.000" az="-0.4" bx="-6" by=" 0.000" bz="-0.4"
+            width="1.5" taper="0.5" midpoint="0.0" idrag="0.7" cx="2" cz="2" cy="2"/>
+  <fuselage ax=" 4.3" ay=" 1.2" az="-0.413" bx=" -7.4" by=" 0.5" bz="-0.4"
+            width="1.4" taper="0.60" midpoint="0.05" idrag="0.8" cx="2" cz="2" cy="2"/>
+  <fuselage ax=" 4.3" ay=" -1.2" az="-0.413" bx=" -7.4" by=" -0.5" bz="-0.4"
+            width="1.4" taper="0.60" midpoint="0.05" idrag="0.8" cx="2" cz="2" cy="2"/>
+  <!-- Cabine -->
+  <fuselage ax=" 5.0" ay=" 0.000" az=" 0.479" bx="  0.573" by=" 0.000" bz=" 0.305"
+            width="1" taper="0.00" midpoint="0.20" idrag="0.5"/>
+
+ <wing x="-1" y="1.436" z="-0.3"
+        chord="8"
+        length="7.2"
+        taper="0.2"
+        sweep="26"
+		incidence="1.5"
+        camber="0.009"
+        dihedral="1"
+        idrag="0.9">
+        <stall aoa="20" width="1" peak="1.6"/>
+        <flap0 start="0.49" end="1" lift="1.3" drag="1.7"/>
+       <flap1 start="0.05" end="0.40" lift="1.5" drag="1.3"/>
+
+        <control-input axis="/controls/flight/aileron" control="FLAP0" split="true" src0="-0.5" src1="0.5" dst0="-0.9" dst1="0.9"/>
+        <control-input axis="/controls/flight/aileron-trim" control="FLAP0" split="true"/>
+        <control-input axis="/controls/flight/flaps" control="FLAP1"/>
+
+        <control-output control="FLAP0" side="left" prop="/surface-positions/left-aileron-pos-norm"/>
+        <control-output control="FLAP0" side="right" prop="/surface-positions/right-aileron-pos-norm"/>
+       <control-output control="FLAP1" prop="/surface-positions/flap-pos-norm"/>
+	   <control-speed control="FLAP1" transition-time="15"/>
+<control-speed control="FLAP1" transition-time="1.2"/>
+  </wing>
+
+  <mstab x="-3.7" y="0" z="-0.3"
+        chord="2" 
+         length="1.2"
+         taper="1.0" 
+        sweep="0"
+		incidence="1"
+        camber="0.009"
+        dihedral="0"
+        idrag="0.9">
+         <stall aoa="18" width="2" peak="1.3"/>
+         <flap0 start="0.05" end="0.47" lift="1" drag="39.9"/>
+         <control-input axis="/controls/flight/speedbrake" control="FLAP0"/>
+         <control-output control="FLAP0" prop="/surface-positions/speedbrake-pos-norm"/>
+         <control-speed control="FLAP0" transition-time="4"/>
+  </mstab>
+
+  <hstab x="-6.7" y="0" z="2.9"
+         chord="3.5"
+         length="3.3"
+         taper="0.25"
+		 idrag="0.5"
+         sweep="35"
+         dihedral="0">
+         <stall aoa="18" width="1" peak="1.8" />
+         <flap0 start="0.075" end="1.2" lift="1.49" drag="1.7"/>
+         
+         <control-input axis="/controls/flight/elevator" control="FLAP0"/>
+         <control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
+         <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm"/>
+		 
+  </hstab>
+
+  <vstab x="-4.4" y="0" z="0.304"
+         chord="4.0"
+         length="3.5"
+         taper="0.8"
+		 sweep="42"
+         idrag="0.7">
+         <stall aoa="16" width="1" peak="1.8"/>
+         <flap0 start="0.13" end="0.96" lift="1.4" drag="1.7"/>
+
+         <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true"/>
+
+         <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm"/>
+		 <control-speed control="FLAP0" transition-time="1"/>
+  </vstab>
+
+  <!-- Engines - Two 11,000 lb (12,300 lb with reheat) Sapphire Sa7R
+   As the real ones Afterburner was so inneficient it couldnt be used at low level, and gave only tiny performance 
+   increase at altitude, I have deliberately under rated the afterburner power for YASIM. The Afterburning FAW9 
+   was actually slower than the non afterburning FAW7 !!! -->
+   <jet x="-2" y="0.8" z="-0.5"
+        mass="3180"
+        thrust="11000"
+        afterburner="11100" 
+        tsfc="0.4"
+        epr="42.1"
+        egt="1250"
+        n1-idle="25" 
+        n1-max="105" 
+        n2-idle="30" 
+        n2-max="230"
+        exhaust-speed="2900"
+        rotation="0">
+        <actionpt x="-7.5" y="0.6" z="-0.5"/>
+        <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE"/>
+        <control-input axis="/controls/engines/engine[0]/throttle" src0="0.9" dst0="0.0" src1="1.0" dst1="1.0" control="REHEAT"/>
+
+        <control-output control="REHEAT" prop="engines/engine[0]/afterburner" />
+		<control-speed control="THROTTLE" transition-time="8"/>
+		<control-speed control="REHEAT" transition-time="4"/>
+  </jet>
+
+  <jet x="-2" y="-0.8" z="-0.5"
+       mass="3180"
+       thrust="11000"
+        afterburner="11100" 
+       tsfc="0.4"
+       epr="42.1"
+       egt="1250"
+       n1-idle="25" 
+       n1-max="105" 
+       n2-idle="30" 
+       n2-max="230"
+       exhaust-speed="2900"
+       rotation="0">
+       <actionpt x="-7.5" y="-0.6" z="-0.5"/>
+       <control-input axis="/controls/engines/engine[1]/throttle" control="THROTTLE"/>
+       <control-input axis="/controls/engines/engine[1]/throttle" src0="0.9" dst0="0.0" src1="1.0" dst1="1.0" control="REHEAT"/>
+
+       <control-output control="REHEAT" prop="engines/engine[1]/afterburner" />
+	   <control-speed control="THROTTLE" transition-time="8"/>
+		<control-speed control="REHEAT" transition-time="4"/>
+  </jet>
+
+  <!-- Roues avants -->
+  <gear x="4.9" y="0.000" z="-2.5"
+        retract-time="7"
+       compression="0.7"
+        spring="1.1"
+        damp="1.4"
+        sfric="1.1"
+        dfric="1.1"
+        upx="0.25" upy="0" upz="1">
+        <control-input axis="/controls/flight/rudder"
+                   control="STEER"
+                   square="true"/>
+
+    <control-input axis="/controls/gear/gear-down"
+                   control="EXTEND"/>
+
+    <control-output control="EXTEND"
+                    prop="/gear/gear[0]/position-norm"/>
+
+    <control-output control="STEER"
+                    prop="/gear/gear[0]/steering-norm"/>
+
+    <control-speed control="EXTEND"
+                   transition-time="7"/>
+  </gear>
+
+
+
+  <!-- Roues gauches x -3.893-->
+ 
+
+  <gear x="-1.3" y="3.727" z="-2.45"
+        retract-time="7"
+        compression="0.8"
+        spring="0.85"
+        damp="2"
+        upx="0.25" upy="0" upz="1">
+        <control-input axis="/controls/gear/brake-left" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+
+        <control-speed control="EXTEND" transition-time="7"/>
+
+        <control-output control="EXTEND" prop="/gear/gear[1]/position-norm"/>
+  </gear>
+
+  <!-- Roues droites x -3.893 -->
+  
+
+  <gear x="-1.3" y="-3.727" z="-2.45"
+        retract-time="7"
+        compression="0.6"
+        spring="0.85"
+        damp="2"
+        upx="0.25" upy="0" upz="1">
+        <control-input axis="/controls/gear/brake-right" control="BRAKE"/>
+        <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
+        <control-input axis="/controls/gear/gear-down" control="EXTEND"/>
+
+        <control-speed control="EXTEND" transition-time="7"/>
+
+        <control-output control="EXTEND" prop="/gear/gear[2]/position-norm"/>
+  </gear>
+
+  
+
+  <tank x="-1" y=" -1" z="-1.5" jet="true" capacity="3000"/>
+  <tank x=" -1.332" y=" 0.000" z="-0.247" jet="true" capacity="2000"/>
+  <tank x="-1" y="1" z="-1.5" jet="true" capacity="3000"/>
+
+  <!-- Pilots -->
+  <ballast x=" 5.456" y="0" z="-0.286" mass="400"/> 
+
+  <!-- radar -->
+  <ballast x=" -0.368" y="0" z="-1.117" mass="250"/> 
+
+  <!-- Mass distribution  -->
+  <ballast x=" 4" y="0" z="-1" mass=" 5742"/>
+  
+
+</airplane>
+

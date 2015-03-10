@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+************************************************************************
+
+************************************************************************
+-->
+
+<PropertyList include="javelin-base.xml">
+
+  <sim>
+
+    <description>Gloster Javelin FAW9 (YASIM)</description>
+    <flight-model>yasim</flight-model>
+    <aero>javelin-yasim</aero>
+
+  </sim>
+
+</PropertyList>

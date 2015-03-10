@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+ 
+    <author>Pedro Caparros ( 3D ), StuartC ( FDM )</author>
+    <aircraft-version>0.3</aircraft-version>
+    <status>0.3 Alpha</status>
+   
+    <fuel-fraction>1</fuel-fraction>
+ 
+    <startup>
+      <splash-texture>Aircraft/Gloster-Javelin/splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path>Aircraft/Gloster-Javelin/Sounds/sound.xml</path>
+    </sound>
+
+    <model>
+      <path>Aircraft/Gloster-Javelin/Models/Gloster_Javelin-FAW9.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+	
+	 <systems>
+	
+    <electrical>
+      <path>Aircraft/Generic/generic-electrical.xml</path>
+    </electrical>
+
+    <autopilot>
+      <path>Aircraft/Gloster-Javelin/Systems/autopilot5.xml</path>
+    </autopilot>
+    <refuel>
+      <type>boom</type>
+      <serviceable type="bool">true</serviceable>
+    </refuel>  
+  </systems> 
+  
+   <hud>
+   <path n="1">Aircraft/Gloster-Javelin/Hud/hud.xml</path>
+   <visibility n="1">true</visibility>
+   <palette>
+    <color n="0">
+     <alpha type="float">0.85</alpha>
+     <antialiased type="bool">true</antialiased>
+     <brightness type="float">0.85</brightness>
+     <transparent type="bool">true</transparent>
+     <red type="float">0.38</red>
+     <green type="float">1.0</green>
+     <blue type="float">0.22</blue>
+    </color>
+    <color n="1">
+     <alpha type="float">0.85</alpha>
+     <antialiased type="bool">true</antialiased>
+     <brightness type="float">0.85</brightness>
+     <transparent type="bool">true</transparent>
+     <red type="float">1.0</red>
+     <green type="float">0.2</green>
+     <blue type="float">0.0</blue>
+    </color>
+   </palette>
+    
+   
+  </hud>
+
+
+    <help>
+      <title>Avro arrow</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+	  <key>
+        <name>}</name>
+        <desc>Start/Stop engines.</desc>
+      </key>
+    </help>
+
+  <multiplay n="0">
+      <chat_display>1</chat_display>
+      <generic n="0">
+	 <int n="2" alias="/controls/lighting/landing-lights[0]" />  <!-- Landing Light Port -->
+       
+        <int n="4" alias="/controls/lighting/nav-lights" />  <!-- Nav Lights -->
+        <int n="5" alias="/controls/lighting/beacon" /><!-- Beacon -->
+        <int n="6" alias="/controls/lighting/strobe" />  <!-- Strobe -->
+        <int n="10" alias="/sim/model/lights/running/state"/>
+        <int n="11" alias="/sim/model/lights/passing/state"/>
+        <int n="12" alias="/sim/model/lights/tail/state"/>
+        <int n="13" alias="/sim/model/lights/recognition/state"/>
+        <int n="14" alias="/sim/model/lights/recognition[1]/state"/>
+        <int n="15" alias="/sim/model/lights/recognition[2]/state"/>
+        <int n="16" alias="/sim/model/lights/formation/state"/>
+        <int n="17" alias="/controls/lighting/landing-lights"/>
+        <int n="18" alias="/controls/lighting/landing-lights[1]"/>     
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+       
+	 <float n="8" alias="/engines/engine[0]/afterburner" /> <!-- Reheat Left Engine -->
+	 <float n="9" alias="/engines/engine[1]/afterburner" /> <!-- Reheat Right Engine -->
+	
+      </generic>
+    </multiplay>
+
+    <!-- Flap settings -->
+    <flaps>
+      <setting>0.00</setting>
+      <setting>0.08</setting>
+      <setting>0.16</setting>
+      <setting>0.32</setting>
+      <setting>0.48</setting>
+      <setting>0.64</setting>
+      <setting>0.82</setting>
+      <setting>1.00</setting>
+    </flaps>
+
+    <weight n="0">
+      <name>Crew</name>
+      <weight-lb>180</weight-lb> 
+      <max-lb>400</max-lb>
+      <min-lb>180</min-lb>
+    </weight>
+
+    <help>
+      <title>Gloster Javelin</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+	  <key>
+        <name>}</name>
+        <desc>Start/Stop engines</desc>
+      </key>
+    </help>
+
+    <replay>
+      <disable>1</disable>
+    </replay>
+
+    <menubar include="Dialogs/arrow-menu.xml"/>
+
+  </sim>
+
+  
+  <instrumentation>
+    <rwr>
+      <display-lighting-intens type="double">0.4</display-lighting-intens>
+      <symbology-lighting-intens type="double">1</symbology-lighting-intens>
+    </rwr>
+    <enav><selected type="int">3</selected></enav>
+    <radar>
+      <range type="int" archive="y">40</range>
+      <range-factor type="double" archive="n">0.001888</range-factor>
+      <minimized type="bool" archive="y">false</minimized>
+      <selected type="int">3</selected>
+      <!-- inicio en pruebas -->
+      <enabled type="bool">true</enabled>
+      <az-field type="double">120</az-field>
+      <range type="double">150</range>
+      <range-selected type="double">50</range-selected>
+      <radar2-range type="double">150</radar2-range>
+      <display-rdr type="bool">true</display-rdr>
+      <radar-standby type="int">3</radar-standby>
+      <mode>
+        <rws type="bool">true</rws>
+        <tws-auto type="bool">false</tws-auto>
+      </mode>
+    </radar> 
+    <terrain-radar>
+      <hi-elev>
+        <alt-ft type="double">-9999.9</alt-ft>
+        <lat-deg type="double">-9999.9</lat-deg>
+        <lon-deg type="double">-9999.9</lon-deg>
+        <dist-m type="double">-9999.9</dist-m>
+        <collision-status type="string">initialised</collision-status>
+      </hi-elev>
+      <settings>
+        <mode type="string">extend</mode>
+        <state type="string">off</state>
+        <range-m type="double">2500</range-m>
+        <step-m type="double">250</step-m>
+        <max-climb-rate-fps type="double">120</max-climb-rate-fps>
+        <hi-elev-markers type="bool">false</hi-elev-markers>
+      </settings>
+    </terrain-radar>
+  </instrumentation>
+  
+  <systems>
+    <electrical>
+      <path>Aircraft/Generic/generic-electrical.xml</path>
+    </electrical>
+    <autopilot>
+      <path>Aircraft/Gloster-Javelin/Systems/autopilot5.xml</path>
+    </autopilot>
+    <refuel>
+      <type>boom</type>
+      <serviceable type="bool">true</serviceable>
+    </refuel>  
+  </systems> 
+
+  <environment>
+    <turbulence>
+      <use-cloud-turbulence>true</use-cloud-turbulence>
+    </turbulence>
+  </environment>
+
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+      <running>true</running>
+    </engine>
+	 <engine n="1">
+      <engine-num type="int">0</engine-num>
+      <running>true</running>
+    </engine>
+  </engines>
+
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <tank-num type="int">0</tank-num>
+        <level-gal_us archive="y">2000</level-gal_us>
+      </tank>
+	    <tank n="1">
+        <tank-num type="int">0</tank-num>
+        <level-gal_us archive="y">3000</level-gal_us>
+      </tank>
+	    <tank n="2">
+        <tank-num type="int">0</tank-num>
+        <level-gal_us archive="y">3000</level-gal_us>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <controls>
+    <gear>
+      <brake-parking type="double">1.0</brake-parking>
+    </gear>
+	<lighting>
+  <strobe>1</strobe>
+  <beacon>1</beacon>
+  <landing-lights>1</landing-lights>
+  <nav-lights>1</nav-lights>
+ </lighting>
+  </controls>
+  
+  <input>
+    <keyboard include="Nasal/javelin-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <doors>
+      <file>Aircraft/Gloster-Javelin/Nasal/doors.nas</file>
+    </doors>
+	  
+    <Javelin>
+   <!--  <file>Aircraft/Gloster-Javelin/Electrical.nas</file> -->
+      <file>Aircraft/Gloster-Javelin/Nasal/liveries.nas</file>
+    </Javelin>
+	  <aar> 
+      <file>Aircraft/Generic/aar.nas</file>
+    </aar>
+    <radardist>
+      <file>Aircraft/Instruments-3d/radardist/radardist.nas</file>
+    </radardist>
+    <rwr>
+      <file>Aircraft/Gloster-Javelin/Nasal/rwr.nas</file>
+    </rwr>
+    <radar>
+      <file>Aircraft/Gloster-Javelin/Nasal/radar.nas</file> 
+    </radar>
+	  <low>
+      <file>Aircraft/Gloster-Javelin/Nasal/low.nas</file>
+    </low>
+	
+	<engines>
+   <file>Aircraft/Gloster-Javelin/Nasal/generic-yasim-engine.nas</file>
+  </engines>
+  
+  <emu>
+   <file>Aircraft/Gloster-Javelin/Nasal/emu.nas</file>
+  </emu>
+ 
+  <lights>
+		   <file>Aircraft/Gloster-Javelin/Nasal/lights.nas</file>
+		</lights>
+ </nasal>
+</PropertyList>
+

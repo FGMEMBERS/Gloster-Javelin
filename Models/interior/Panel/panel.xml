@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  
+
+ 
+
+  <!-- Asi -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+       <x-m>  -4.365 </x-m>
+      <y-m>  -0.0 </y-m>
+      <z-m>  0.35 </z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- AI -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+        <x-m>  -4.359 </x-m>
+      <y-m>  0.08</y-m>
+      <z-m>  0.34 </z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+  
+   <!-- ADF -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/adf/rmi.xml</path>
+    <offsets>
+        <x-m>  -4.347 </x-m>
+      <y-m>  0.08</y-m>
+      <z-m>  0.273 </z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Alt -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  -4.346	  </x-m>
+      <y-m>  -0.0 </y-m>
+      <z-m>  0.29 </z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+  
+   <!--Radar  Alt -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/ralt/radar-altimeter.xml</path>
+    <offsets>
+      <x-m>  -4.346	  </x-m>
+      <y-m>  -0.07 </y-m>
+      <z-m>  0.29 </z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+  
+  <!--ils -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/ils/ILS.xml</path>
+    <offsets>
+      <x-m>  -4.33	  </x-m>
+      <y-m>  -0.055 </y-m>
+      <z-m>  0.21 </z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+  
+  <!--ils -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/ki206/ki206.xml</path>
+    <offsets>
+    	   <x-m>  -4.363 </x-m>
+       <y-m>  -0.14 </y-m>
+      <z-m>  0.35 </z-m>
+	  
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+  
+   <!--ils -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
+    <offsets>
+      <x-m>  -4.319	  </x-m>
+      <y-m>  -0.14 </y-m>
+      <z-m>  0.22 </z-m>
+	  <pitch-deg>-15</pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Turn   -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+       <x-m>  -4.33 </x-m>
+      <y-m>  0.1645 </y-m>
+      <z-m>  0.23 </z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Mach -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/mach/mach.xml</path>
+    <offsets>
+      <x-m>  -4.365 </x-m>
+      <y-m>  0.165 </y-m>
+      <z-m>  0.35 </z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+
+  
+
+  <!-- aoa -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/AoA/aoa-gauge.xml</path>
+    <offsets>
+       <x-m>  -4.348 </x-m>
+      <y-m>  0.165 </y-m>
+      <z-m>  0.29 </z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- oat -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/oat/air-temp.xml</path>
+    <offsets>
+     <x-m>  -4.366 </x-m>
+      <y-m>  -0.07 </y-m>
+      <z-m>  0.35 </z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+    </model>
+
+
+<!-- gear -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/gear/gear.xml</path>
+    <offsets>
+       <x-m>  -4.3222	  </x-m>
+      <y-m>  -0.205 </y-m>
+      <z-m>  0.22 </z-m>
+	  <pitch-deg>-15</pitch-deg>
+    </offsets>
+  </model>
+
+<!-- Gun Sight -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/sight/ggs.xml</path>
+    <offsets>
+      <x-m>  -4.39 </x-m>
+      <y-m>  0.02 </y-m>
+      <z-m>  0.490 </z-m>
+    </offsets>
+  </model>
+
+  
+  <!-- rpm -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/rpm/rpm-1.xml</path>
+    <offsets>
+      <x-m>  -4.365 </x-m>
+      <y-m>  0.23 </y-m>
+      <z-m>  0.35 </z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/rpm/rpm-2.xml</path>
+    <offsets>
+      <x-m>  -4.365 </x-m>
+      <y-m>  0.286 </y-m>
+      <z-m>  0.35 </z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- oil -->
+   <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/oil/oil-1.xml</path>
+    <offsets>
+      <x-m>  -4.35 </x-m>
+      <y-m>  0.289 </y-m>
+      <z-m>  0.3 </z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/oil/oil-2.xml</path>
+    <offsets>
+      <x-m>  -4.35 </x-m>
+      <y-m>  0.33 </y-m>
+      <z-m>  0.3 </z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+ 
+  <!-- egt -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/egt/exh1.xml</path>
+    <offsets>
+       <x-m>  -4.342 </x-m>
+      <y-m>  0.23 </y-m>
+      <z-m>  0.29 </z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/egt/exh2.xml</path>
+    <offsets>
+       <x-m>  -4.334 </x-m>
+      <y-m>  0.23 </y-m>
+      <z-m>  0.225 </z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- G 
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/GMeter/gmeter.xml</path>
+    <offsets>
+      <x-m> -1.445 </x-m>
+      <y-m> -0.35 </y-m>
+      <z-m> 0.21 </z-m>
+    </offsets>
+  </model>
+  -->
+  <!-- epr 
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/epr/eprL.xml</path>
+    <offsets>
+     <x-m> -1.445 </x-m>
+      <y-m> -0.32 </y-m>
+      <z-m> 0.28 </z-m>
+    </offsets>
+  </model>
+-->
+  <!-- flaps -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/flap-ind/flap-indicator.xml</path>
+    <offsets>
+       <x-m>  -4.32 </x-m>
+      <y-m>  -0.27 </y-m>
+      <z-m> 0.22 </z-m>
+	  
+	 
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+  
+   <!-- Left tank -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/Fuel/fuel.xml</path>
+    <offsets>
+        <x-m>  -4.31 </x-m>
+      <y-m>  -0.025</y-m>
+      <z-m>  0.14</z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+  
+   <!-- Right tank -->
+  <model>
+    <path>Aircraft/Gloster-Javelin/Models/Interior/Panel/Instruments/Fuel/fuel1.xml</path>
+    <offsets>
+      <x-m>  -4.31 </x-m>
+      <y-m>  0.075</y-m>
+      <z-m>  0.14</z-m>
+	  <pitch-deg>-17</pitch-deg>
+    </offsets>
+  </model>
+  
+  
+</PropertyList>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<PropertyList include="javelin-yasim-cnf.xml">
+
+  <sim>
+    <description>Gloster Javelin FAW9 ( YASIM )</description>
+    <author>Pedro Caparros ( 3D ), StuartC ( FDM )</author>
+  </sim>
+
+</PropertyList>
+

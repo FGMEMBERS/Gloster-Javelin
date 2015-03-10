@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+
+    <enable3d>true</enable3d>
+  <aiming-reticle>
+  <x>15</x>
+  <y>-10</y>
+  <width>18</width> 
+  <height>18</height>
+ </aiming-reticle>
+
+ 
+
+ 
+</PropertyList>
