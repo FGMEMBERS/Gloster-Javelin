@@ -7,7 +7,7 @@ OBJECT poly
 name "face"
 data 4
 face
-texture "C:/Program Files/FlightGear 2.4.0/data/Aircraft/vampire/Models/interior/Panel/Instruments/ai/ai.png"
+texture "Aircraft/vampire/Models/interior/Panel/Instruments/ai/ai.png"
 numvert 17
 -0.001206 -0.00015 -0.024181
 -0.001206 0.008828 -0.022342
@@ -128,7 +128,7 @@ OBJECT poly
 name "fond"
 data 4
 fond
-texture "C:/Program Files/FlightGear 2.4.0/data/Aircraft/vampire/Models/interior/Panel/Instruments/ai/ai.png"
+texture "Aircraft/vampire/Models/interior/Panel/Instruments/ai/ai.png"
 numvert 324
 0.001433 -0.000125 0.02802
 0.001433 0.005288 0.027481
@@ -2254,7 +2254,7 @@ OBJECT poly
 name "visses"
 data 6
 visses
-texture "C:/Program Files/FlightGear 2.4.0/data/Aircraft/vampire/Models/interior/Panel/Instruments/ai/ai.png"
+texture "Aircraft/vampire/Models/interior/Panel/Instruments/ai/ai.png"
 numvert 732
 0.002081 -0.024149 0.027566
 0.002081 -0.026379 0.026406
@@ -7832,7 +7832,7 @@ OBJECT poly
 name "vitre"
 data 5
 vitre
-texture "C:/Program Files/FlightGear 2.4.0/data/Aircraft/vampire/Models/interior/Panel/Instruments/ai/ai.png"
+texture "Aircraft/vampire/Models/interior/Panel/Instruments/ai/ai.png"
 numvert 259
 0.002123 1.4e-005 4e-006
 0.002883 0.022396 -0.015398
